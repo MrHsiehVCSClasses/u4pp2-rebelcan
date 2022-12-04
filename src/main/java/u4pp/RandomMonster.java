@@ -1,5 +1,6 @@
 package u4pp;
 
+//basically repeating the same thing as Monster.java
 public class RandomMonster extends Monster{
 
     public RandomMonster(String name, int health, int attack, int exp){

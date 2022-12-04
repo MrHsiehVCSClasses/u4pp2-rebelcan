@@ -6,6 +6,7 @@ public class Combatant {
     private int attack;
     private int health;
 
+    //setting up constructor
     public Combatant(String name, int maxHealth, int attack){ 
         this.health = maxHealth; 
         this.maxHealth = maxHealth;
@@ -29,6 +30,7 @@ public class Combatant {
         return this.attack;
     }
 
+    //setting health and boundaries to make sure minimum health can be 0 & health is equal to possible max health
     public void setHealth(int health){
         if (health < 0){
             this.health = 0;
@@ -54,6 +56,7 @@ public class Combatant {
         }
     }
 
+    //making sure attack power is positive and deals actual damage
     public void setAttackPower(int attackPower){
         if (attackPower < 0){
             this.attack = 0;
@@ -63,6 +66,7 @@ public class Combatant {
         }
     }
 
+    //directly affecting health
     public void takeDamage(int damage){
         if (damage < 0){
             System.out.println("Cannot take negative damage.");
@@ -72,6 +76,7 @@ public class Combatant {
         }
     }
 
+    //as long as health is greater than 0, combatant can fight
     public boolean canFight(){
         return health > 0;
     }

@@ -1,5 +1,6 @@
 package u4pp;
 
+//basically repeating same thing as Monster.java
 public class DefenseMonster extends Monster{
 
     private int defense;

@@ -48,6 +48,7 @@ public class Fighter extends Combatant {
         this.focusStacks += 1;
     }
 
+    //shows how exp can affect level, health, attack power
     public void gainEXP(int exp){
         this.experience += exp;
         while (this.experience >= this.level){
@@ -59,6 +60,7 @@ public class Fighter extends Combatant {
         }
     }
     
+    //how take Damage would work with and without blocking
     public void takeDamage (int damage){
         if (this.blocking){
             damage = Math.floorDiv(damage, 2);

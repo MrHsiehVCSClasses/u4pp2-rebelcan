@@ -34,6 +34,8 @@ public class MonsterFighter {
         fight(mc, defense);
     
     }
+
+    //takes in diff user inputs and carries out actions accordingly
     private void fight(Fighter f, Monster m){
         System.out.println("\nYou found a monster! \n" + m);
         while (f.getHealth() != 0 && m.getHealth() != 0){
@@ -56,7 +58,7 @@ public class MonsterFighter {
 
         }
 
-
+        //exits the game if Fighter died
         if (f.getHealth() == 0){
             System.out.println("You died! Game Over. :( ");
             System.exit(0);
